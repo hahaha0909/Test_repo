@@ -1,7 +1,14 @@
-def func(a=1, b=1):
+from Calculator import Calc
+import random
+def func(a, b):
     """Dockstring"""
-    return a * b
+    for _ in range(10):
+        a = random.randint(0, 5)
+        b = random.randint(0, 3)
+        c = Calc(a, b)
+        return c.division()
+
 
 
 if __name__ == "__main__":
-    print(func())
+    print(func(1, 2))
