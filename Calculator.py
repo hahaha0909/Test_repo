@@ -13,8 +13,10 @@ class Calc:
     def mul(self):
         return self.x * self.y
 
-    def division(self):
+    def division(self, check=True):
         try:
-            return self.x / self.y
+            if check:
+                return self.x / self.y
+            return self.x // self.y
         except ZeroDivisionError:
             print("[LOG: WARNING] Деление на ноль")

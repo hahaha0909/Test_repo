@@ -6,7 +6,7 @@ def func(a, b):
         a = random.randint(0, 5)
         b = random.randint(0, 3)
         c = Calc(a, b)
-        return c.division()
+        print(c.division(check=True))
 
 
 
